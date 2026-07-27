@@ -167,7 +167,7 @@
 
     function formatDateTime(d) {
       const datePart = d.toLocaleDateString([], { weekday: 'long', month: 'long', day: 'numeric' });
-      const timePart = d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit' });
+      const timePart = d.toLocaleTimeString([], { hour: 'numeric', minute: '2-digit', hour12: true });
       return `${datePart} · ${timePart}`;
     }
 
